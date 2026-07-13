@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritesh Bhardwaj | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-brand"><i class="fa-solid fa-code"></i> RB</div>
+    <div class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certificates" class="nav-link">Certificates</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+    <div class="hero-bg">
+        <div class="hero-shape shape-1"></div>
+        <div class="hero-shape shape-2"></div>
+        <div class="hero-shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+        <div class="hero-badge" data-aos="fade-up">
+            <i class="fa-solid fa-hand-wave"></i> Hello, I'm
+        </div>
+        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+            Ritesh<br><span class="gradient-text">Bhardwaj</span>
+        </h1>
+        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+            <span id="typed-output"></span>
+        </p>
+        <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+            <a href="#projects" class="btn btn-primary">
+                <i class="fa-solid fa-rocket"></i> View My Work
+            </a>
+            <a href="#contact" class="btn btn-outline">
+                <i class="fa-regular fa-envelope"></i> Get In Touch
+            </a>
+        </div>
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+            <div class="stat">
+                <span class="stat-number" id="repoCount">--</span>
+                <span class="stat-label">GitHub Repos</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-number"><i class="fa-solid fa-star"></i> 5</span>
+                <span class="stat-label">Java HackerRank</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-number">2026</span>
+                <span class="stat-label">Graduated</span>
+            </div>
+        </div>
+    </div>
+    <a href="#about" class="scroll-indicator">
+        <i class="fa-solid fa-chevron-down"></i>
+    </a>
+</section>
+
+<!-- About Section -->
+<section class="section" id="about">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">About <span class="gradient-text">Me</span></h2>
+        <div class="about-grid">
+            <div class="about-text" data-aos="fade-right">
+                <p class="about-lead">I'm a Computer Science graduate from Chandigarh University, driven by a love for clean code, efficient algorithms, and building things that matter.</p>
+                <p>With a strong foundation in Java, Data Structures &amp; Algorithms, and Object-Oriented Programming, I enjoy tackling complex problems and turning ideas into functional applications. I'm always eager to learn new technologies and push my boundaries as a developer.</p>
+                <div class="about-details">
+                    <div class="detail-item" data-aos="fade-up" data-aos-delay="100">
+                        <span class="detail-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                        <div>
+                            <strong>Education</strong>
+                            <span>B.E. Computer Science &amp; Engineering</span>
+                            <span>Chandigarh University (2022 &ndash; 2026) &bull; Graduated</span>
+                        </div>
+                    </div>
+                    <div class="detail-item" data-aos="fade-up" data-aos-delay="200">
+                        <span class="detail-icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <div>
+                            <strong>Location</strong>
+                            <span>India</span>
+                        </div>
+                    </div>
+                    <div class="detail-item" data-aos="fade-up" data-aos-delay="300">
+                        <span class="detail-icon"><i class="fa-solid fa-bullseye"></i></span>
+                        <div>
+                            <strong>Focus</strong>
+                            <span>Backend Development &amp; Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-card-stack" data-aos="fade-left">
+                <div class="floating-card card-java">
+                    <i class="fa-brands fa-java"></i> Java
+                </div>
+                <div class="floating-card card-dsa">
+                    <i class="fa-solid fa-chart-line"></i> DSA
+                </div>
+                <div class="floating-card card-spring">
+                    <i class="fa-solid fa-leaf"></i> Spring Boot
+                </div>
+                <div class="floating-card card-react">
+                    <i class="fa-brands fa-react"></i> React
+                </div>
+                <div class="floating-card card-python">
+                    <i class="fa-brands fa-python"></i> Python
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="section section-dark" id="skills">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">My <span class="gradient-text">Skills</span></h2>
+        <div class="skills-grid">
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-category-icon"><i class="fa-solid fa-code"></i></div>
+                <h3 class="skill-category-title">Languages</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="fa-brands fa-java"></i> Java</span>
+                    <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+                    <span class="skill-tag"><i class="fa-solid fa-c"></i> C++</span>
+                    <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                    <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML/CSS</span>
+                </div>
+            </div>
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-category-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <h3 class="skill-category-title">Frameworks &amp; Tools</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+                    <span class="skill-tag"><i class="fa-brands fa-react"></i> React</span>
+                    <span class="skill-tag"><i class="fa-solid fa-cube"></i> Maven</span>
+                    <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</span>
+                </div>
+            </div>
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                <div class="skill-category-icon"><i class="fa-solid fa-brain"></i></div>
+                <h3 class="skill-category-title">Core Concepts</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="fa-solid fa-sitemap"></i> Data Structures</span>
+                    <span class="skill-tag"><i class="fa-solid fa-diagram-project"></i> Algorithms</span>
+                    <span class="skill-tag"><i class="fa-solid fa-cubes"></i> OOP</span>
+                    <span class="skill-tag"><i class="fa-solid fa-lightbulb"></i> Problem Solving</span>
+                    <span class="skill-tag"><i class="fa-solid fa-plug"></i> REST APIs</span>
+                </div>
+            </div>
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                <div class="skill-category-icon"><i class="fa-solid fa-database"></i></div>
+                <h3 class="skill-category-title">Databases</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="fa-solid fa-dolphin"></i> MySQL</span>
+                    <span class="skill-tag"><i class="fa-solid fa-leaf"></i> MongoDB</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="section" id="projects">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">My <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+            <i class="fa-brands fa-github"></i> Fetched live from GitHub
+        </p>
+        <div class="projects-grid" id="projectsGrid">
+            <div class="loading-spinner">
+                <i class="fa-solid fa-spinner fa-spin fa-2x"></i>
+                <p>Loading projects from GitHub...</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certificates Section -->
+<section class="section section-dark" id="certificates">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Certificates &amp; <span class="gradient-text">Achievements</span></h2>
+        <div class="cert-grid">
+            <div class="cert-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="cert-icon"><i class="fa-solid fa-trophy"></i></div>
+                <h3>HackerRank</h3>
+                <div class="cert-badges">
+                    <span class="cert-badge badge-gold"><i class="fa-solid fa-star"></i> Java &mdash; 5 Stars</span>
+                    <span class="cert-badge badge-silver"><i class="fa-solid fa-star"></i> Problem Solving &mdash; 3 Stars</span>
+                    <span class="cert-badge badge-silver"><i class="fa-solid fa-star"></i> C++ &mdash; 3 Stars</span>
+                </div>
+                <a href="https://www.hackerrank.com/" target="_blank" rel="noopener" class="cert-link">
+                    View Profile <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="cert-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+                <h3>Coding Ninjas</h3>
+                <div class="cert-badges">
+                    <span class="cert-badge badge-gold"><i class="fa-solid fa-award"></i> Specialist: Java &amp; OOPs</span>
+                </div>
+                <a href="#" class="cert-link">
+                    View Certificate <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section" id="contact">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Feel free to reach out for opportunities or collaborations</p>
+        <div class="contact-grid">
+            <a href="mailto:Riteshlucky9319@gmail.com" class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <h3>Email</h3>
+                <p>Riteshlucky9319@gmail.com</p>
+            </a>
+            <a href="tel:+919997041590" class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <h3>Phone</h3>
+                <p>+91 9997041590</p>
+            </a>
+            <a href="https://github.com/RiteshBhardwaj999" target="_blank" rel="noopener" class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                <h3>GitHub</h3>
+                <p>RiteshBhardwaj999</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-brand"><i class="fa-solid fa-code"></i> Ritesh Bhardwaj</div>
+        <div class="footer-socials">
+            <a href="https://github.com/RiteshBhardwaj999" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:Riteshlucky9319@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2026 Ritesh Bhardwaj. Built with <i class="fa-solid fa-heart" style="color:#ef4444;"></i> &amp; Spring Boot.</p>
+    </div>
+</footer>
+
+<!-- AOS Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- Typed.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"></script>
+
+<!-- Custom Script -->
+<script src="script.js"></script>
+</body>
+</html>
